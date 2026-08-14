@@ -1,0 +1,31 @@
+class Vehicle {
+    void display() {
+        System.out.println("This is a generic vehicle.");
+    }
+}
+
+class Car extends Vehicle {
+    @Override
+    void display() {
+        System.out.println("This is a Car - built for comfort and speed.");
+    }
+}
+
+public class VehicleDemo {
+    public static void main(String[] args) {
+        Vehicle v = new Vehicle();
+        v.display();
+
+        Car c = new Car();
+        c.display();
+
+        // Runtime polymorphism
+        Vehicle ref = new Car();
+        ref.display();
+    }
+}
+Output:
+
+This is a generic vehicle.
+This is a Car - built for comfort and speed.
+This is a Car - built for comfort and speed.
