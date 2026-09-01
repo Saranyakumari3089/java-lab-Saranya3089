@@ -1,0 +1,46 @@
+package employee;
+
+public class Employee {
+    private int empId;
+    private String empName;
+    private double salary;
+
+    public Employee(int empId, String empName, double salary) {
+        this.empId = empId;
+        this.empName = empName;
+        this.salary = salary;
+    }
+
+    public int getEmpId() {
+        return empId;
+    }
+
+    public String getEmpName() {
+        return empName;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void displayDetails() {
+        System.out.println("Employee ID: " + empId);
+        System.out.println("Employee Name: " + empName);
+        System.out.println("Salary: " + salary);
+    }
+}
+Main.java
+import employee.Employee;
+
+public class Main {
+    public static void main(String[] args) {
+        Employee emp = new Employee(101, "Ravi Kumar", 45000.0);
+
+        emp.displayDetails();
+    }
+}
+
+Output
+Employee ID: 101
+Employee Name: Ravi Kumar
+Salary: 45000.0
