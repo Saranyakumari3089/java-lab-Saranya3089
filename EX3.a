@@ -1,0 +1,39 @@
+ChatGPT said:
+Sure. Here are Q1, Q3, Q5, Q7, and Q9 in a clean GitHub-ready format, with each program, output, and suggested file structure.
+
+Q1. Employee Name Formatter using String Handling
+EmployeeNameFormatter.java
+public class EmployeeNameFormatter {
+    public static void main(String[] args) {
+        String emp1 = "john smith";
+        String emp2 = "John Smith";
+
+        System.out.println("Employee 1 Name : " + emp1);
+        System.out.println("Employee 2 Name : " + emp2);
+
+        System.out.println("Length of Employee 1 name: " + emp1.length());
+        System.out.println("Length of Employee 2 name: " + emp2.length());
+
+        System.out.println("Employee 1 in Uppercase : " + emp1.toUpperCase());
+        System.out.println("Employee 2 in Uppercase : " + emp2.toUpperCase());
+
+        System.out.println("Employee 1 in Lowercase : " + emp1.toLowerCase());
+        System.out.println("Employee 2 in Lowercase : " + emp2.toLowerCase());
+
+        System.out.println("Names equal (case-sensitive) ? " + emp1.equals(emp2));
+        System.out.println("Names equal (ignoring case) ? "
+                + emp1.equalsIgnoreCase(emp2));
+    }
+}
+
+Output
+Employee 1 Name : john smith
+Employee 2 Name : John Smith
+Length of Employee 1 name: 10
+Length of Employee 2 name: 10
+Employee 1 in Uppercase : JOHN SMITH
+Employee 2 in Uppercase : JOHN SMITH
+Employee 1 in Lowercase : john smith
+Employee 2 in Lowercase : john smith
+Names equal (case-sensitive) ? false
+Names equal (ignoring case) ? true
